@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivetha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #35737f;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #12343b;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        nav ul li a:hover {
+            color: #44c2ec;
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #ffffff;
+            height: 1.2px;
+            margin: 10px 20px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0px;
+            align-items: center;
+        }
+
+        .firstSection > div {
+            width: 50%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 70px;
+            width:70%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .leftSection .btn {
+            padding:12px;
+            background: #12343b;
+            color:#ffffff;
+            border:2px solid white;
+            border-radius: 6px;
+            font-size:20px;
+            cursor:pointer;
+           
+        }
+        .leftSection .buttons{
+            padding:50px 0;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin:70px;
+            align-items: center;
+        }
+
+        .purple {
+            color: #12343b;
+        }
+
+        #element {
+            color: #12343b
+        }
+
+        .secondSection {
+            max-width: 70vw;
+            margin: 70px;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+        }
+
+        .text-gray {
+            color: grey;
+        }
+
+        .secondSection .box {
+            flex-direction: column;
+            width: 85vw;
+            background-color: #ffffff;
+            height: 1.2px;
+            margin: 30px 10px;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: unset;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: 30px;
+            left: -9px;
+
+        }
+
+        .vertical-title {
+            margin:5px;
+            position: relative;
+            top: -1px;
+            width: 300px;
+            font-size: 14px;
+
+        }
+
+        .vertical-desc {
+            margin:5px;
+            position: relative;
+            top: 20px;
+            color: rgb(189, 184, 184);
+            width: 150px;
+            font-size: 12px;
+
+        }
+
+        footer {
+            background-color: #12343b;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+        .footer h3{
+            font-size: 1rem;
+        }
+
+        .footer > div {
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color:#35737f;
+            padding :12px 0;
+        }
+        @media screen and (max-width:1000px) {
+            .box{
+                flex-direction: column-reverse;
+            }
+            .secondSection .vertical{
+                height:unset;
+            }
+            .secondSection .box{
+                width:50vw;
+            }
+            .vertical-title, .vertical-desc{
+                left: 100px;
+
+            }
+            nav{
+                flex-direction: column;
+            }
+            footer{
+                display: none;
+            }
+            .firstSection{
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nivetha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My Name is <span class="purple">Nivetha</span></div>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons"></div>
+                <button class="btn">Downlode Resume</button>
+                <button class="btn">Visit Github</button>
+            </div>
+            <div class="rightSection">
+                <img src="pic.png" alt style="width:80%">
+            </div>
+        </section>
+        <section class="firstSection"></section>
+        <hr>
+        <section class="secondSection">
+            <span class="'text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I have worked here for 2 years.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I have worked here for 2 years.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I have worked here for 2 years.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I have worked here for 2 years.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Nivetha's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyrights &#169; nivethasportfolio.com | All rights reserved
+        </div>
+
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!--setup and start animation-->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web designer', 'C++ developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
